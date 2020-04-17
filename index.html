@@ -1,0 +1,478 @@
+<!doctype html>
+    <html>
+        <head>
+            <title> Craigslist </title>
+            <style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free Web tutorials on HTML and CSS">
+                <meta http-equiv="refresh" content="30">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+}
+
+body {
+  min-height: 100vh;
+  
+}
+
+main {
+  max-width: max-content;
+  margin: 5em;
+  padding: 1.5em;
+  background-color: #fff;
+  border: 5px solid #bcccdc;
+  border-radius: 8px;
+  float:left; 
+  
+ 
+}
+
+// For the month
+.month-indicator {
+  color: #334e68;
+  text-align: center;
+  font-weight: 500;
+}
+
+
+}
+
+// Styles for the weekday/weekend header
+.day-of-week {
+  margin-top: 1.5em;
+}
+
+.day-of-week > * {
+  font-size: 0.7em;
+  color: #829ab1;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-variant: small-caps;
+  text-align: center;
+}
+
+/* Dates */
+.date-grid {
+  margin-top: 0.5em;
+  
+
+}
+
+/* Positioning the first day */
+.date-grid button:first-child {
+  grid-column: 4;
+}
+
+// Style for each day
+.date-grid button {
+  position: relative;
+  border: 0;
+  width: 4.5ch;
+  height: 4.5ch;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #486581;
+ 
+}
+
+.date-grid button:hover,
+.date-grid button:focus {
+  outline: none;
+  background-color: #f0f4f8;
+  color: #334e68;
+  
+}
+
+.date-grid button:active,
+.date-grid button.is-selected {
+  background-color: #c6f7e2;
+  color: #014d40;
+
+}
+                
+                
+.day-of-week,
+.date-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+}
+ 
+              div {
+                    width: auto;
+                  
+               
+              
+                 
+                    }
+                ul {
+  list-style-type: none;
+  margin: 0px;
+ 
+  overflow: hidden;
+  background-color: #48474B;
+}
+                li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:#222127;
+;
+                }
+                
+                h1 { 
+                    color:#DCDCDC;
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-size: 12px;
+                    font-weight: normal;
+                    background-color:#48474B;
+                    padding: 8px;
+                }
+                h2 { 
+               
+                color:#48474B;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 30px;
+                font-weight: bold;
+                
+        
+                }
+                h3 {
+                color:#DCDCDC;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                
+                }
+                section {
+                    display: block;
+                    background-color: #48474B;
+                    padding: 5px;
+                }
+                nav {
+                   
+                    background-color: #222127;
+                    padding: 01px;
+                    
+                }
+                h4 {
+                color:#DCDCDC;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 12px; 
+                font-weight: normal;
+                }
+                article {
+                    display: block;
+                    background-color: #F0F0F0;
+                    padding: 25px;
+                    border: 10px solid #D7D7D7; 
+                    
+                    
+                }
+                hearder {
+                    background-color:#D2D2D2;
+                    padding: 5px;
+                    display: block;
+                    width: auto;
+                    height: auto;
+                 
+                    height: 40px;
+                    margin: 2px;
+                   
+ 
+                    
+                }
+                h5 {
+                color:#48474B;
+                font-family: sans-serif;
+                font-size: 12px; 
+                font-weight: normal;
+                text-align: left;
+              
+                }
+                button1 {
+                    display: inline-block;
+                    border: 20px solod #F0F0F0;
+                    color: #48474B;
+        
+                    
+                }
+                  h6 {
+                color:#48474B;
+                font-family: sans-serif;
+                font-size: 14px; 
+                font-weight: normal;
+        
+                      
+                
+                
+                }
+        .card {
+          background: #fff;
+          border-radius: 2px;
+          display: inline-block;
+          height: 1300px;
+          margin: 1rem;
+          position: relative;
+          width: 1300px;
+}
+
+            .card-1 {
+              box-shadow: 0 3px 5px rgba(0,0,0,0.12), 0 3px 4px rgba(0,0,0,0.24);
+              transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+                            }
+
+                            /*Container*/
+            .container{
+                width:1230px;
+                margin:500px auto;
+                padding:25px;
+                min-height:400px;
+                height:auto;	
+            }
+            .container h2 { margin-top:30px;}
+
+            .box h3{
+                text-align:center;
+                position:relative;
+                top:80px;
+            }
+            .box {
+                width:70%;
+                height:200px;
+                background:#FFF;
+                margin:50px auto;
+                }
+.pagination {
+  display: inline-block;
+ 
+                    
+                }
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: #222127;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {
+ background-color: #ddd;
+                }
+                
+                
+                
+
+            </style>
+            
+            
+        </head>
+        <header>
+         <div><h1>   
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NEARBY CL &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;US CITIES &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;US STATES &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CANADA &nbsp; | &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;CCL WORLDWIDE &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; <input type="text" &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&n="search-box" placeholder="ENGLISH"></h1>
+             
+            
+   </div>
+        </header>
+        <h2>  &nbsp; &nbsp; &nbsp; &nbsp;Craigslist </h2>
+      <div class="card"> 
+      <div class="card card-1">
+           <section>
+               <ul> <h3>
+                    <li> <a href="https://www.google.com">  New York City  </a>  </li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<li> <a href="https://www.google.com">|  &nbsp;  Manhattan </a>  </li> &nbsp; &nbsp;<li> <a href="https://www.google.com">| &nbsp;  Brooklyn </a>  </li>&nbsp;  &nbsp; <li> <a href="https://www.google.com">| &nbsp; Bronx </a>  </li>&nbsp;  &nbsp;<li> <a href="https://www.google.com">| &nbsp;  Queens </a>  </li>&nbsp; &nbsp; <li> <a href="www.google.com">| &nbsp; State Island </a>  </li> &nbsp; <li> <a href="https://www.google.com">| &nbsp;  Long Island </a>  </li><li> <a href="https://www.google.com">| &nbsp;    New Jersy </a>  </li> <li> <a href="https://www.google.com">| Westchester </a>  </li> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </h3>
+                
+            </ul>
+           </section> 
+           <nav>
+               <h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;COMMUNITY&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; HOUSING &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERVICES&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; FOR SALE &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JOBS &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DISCUSSION FORUMS&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; GIGS &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; MORE>></h4>
+               
+           </nav>
+           
+              
+           <article>
+               <p><img src="city_street_movement_136678_3840x2160.jpg" alt="middle" width="1230" height="500" > </p>
+               
+           </article>
+              <hearder>
+                  <h5> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;ABOUT US &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;  CREATE A POSTING &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; MY ACCOUNT &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; SEARCH&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="text" id="search-box" placeholder="Keywords..."> &nbsp;&nbsp; <button type="button1" class="btn btn-outline-secondary"> <a href="search.html">search  </a></button><center> </center> </h5>
+          </hearder>
+          
+        <body> 
+        
+            
+           <main>
+         
+ <center> 
+  
+   <div class="calendar" >
+    <div class="month-indicator" >
+ <time datetime="2020-04"> April 2020 </time> 
+    </div>
+    <div class="day-of-week">
+      <div>Su</div>
+      <div>Mo</div>
+      <div>Tu</div>
+      <div>We</div>
+      <div>Th</div>
+      <div>Fr</div>
+      <div>Sa</div>
+    </div>
+    <div class="date-grid">
+      <button>
+        <time datetime="2020-04-01">1</time>
+      </button>
+      <button>
+        <time datetime="2020-04-02">2</time>
+      </button>
+      <button>
+        <time datetime="2020-04-03">3</time>
+      </button>
+      <button>
+        <time datetime="2020-04-04">4</time>
+      </button>
+      <button>
+        <time datetime="2020-04-05">5</time>
+      </button>
+      <button>
+        <time datetime="2020-04-06">6</time>
+      </button>
+      <button>
+        <time datetime="2020-04-07">7</time>
+      </button>
+      <button>
+        <time datetime="2020-04-08">8</time>
+      </button>
+      <button>
+        <time datetime="2020-04-09">9</time>
+      </button>
+      <button>
+        <time datetime="2020-04-10">10</time>
+      </button>
+      <button>
+        <time datetime="2020-04-11">11</time>
+      </button>
+      <button>
+        <time datetime="2020-04-12">12</time>
+      </button>
+      <button>
+        <time datetime="2020-04-13">13</time>
+      </button>
+      <button>
+        <time datetime="2020-04-14">14</time>
+      </button>
+      <button>
+        <time datetime="2020-04-15">15</time>
+      </button>
+      <button>
+        <time datetime="2020-04-16">16</time>
+      </button>
+      <button>
+        <time datetime="2020-04-17">17</time>
+      </button>
+      <button>
+        <time datetime="2020-04-18">18</time>
+      </button>
+      <button>
+        <time datetime="2020-04-19">19</time>
+      </button>
+      <button>
+        <time datetime="2020-04-20">20</time>
+      </button>
+      <button>
+        <time datetime="2020-04-21">21</time>
+      </button>
+      <button>
+        <time datetime="2020-04-22">22</time>
+      </button>
+      <button>
+        <time datetime="2020-04-23">23</time>
+      </button>
+      <button>
+        <time datetime="2020-04-24">24</time>
+      </button>
+      <button>
+        <time datetime="2020-04-25">25</time>
+      </button>
+      <button>
+        <time datetime="2020-04-26">26</time>
+      </button>
+      <button>
+        <time datetime="2020-04-27">27</time>
+      </button>
+      <button>
+        <time datetime="2020-04-28">28</time>
+      </button>
+      <button>
+        <time datetime="2020-04-29">29</time>
+      </button>
+      <button>
+        <time datetime="2020-04-30">30</time>
+      </button>
+      
+      
+    </div>
+    
+  </div>
+  </center>
+</main>
+             
+             <br>
+          <td> <img src="Untitled-5.png" style="position:relative;  align-items: baseline; right: 10px; width:730px; height:250px;" >
+              
+          </td>
+             
+              <tb>  <h6>  Craigslist is hiring in SF &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;	Best - of - craigslist &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;	Craigslist blog &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;	Philanthropies  </h6> 
+             <p> <h6> &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; Craigslist open source&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; 	&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;	Craig Newmark 	&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Craigslist TV &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;		“craigslist joe” </h6> 
+              </tb>
+            
+            
+            <center>            
+<div class="pagination">
+ <p><a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+     <a href="#">&raquo;</a>  </p>  
+     
+     
+    
+</div>                   
+      
+       
+   </center>  
+            
+       </body>
+          
+           </div>
+           
+           </div>
+          
+            <footer>
+            
+            
+          <h1 style="background-color:#48474B; font-size: 13px; width: auto; height: 10px; padding: 15px; margin: 30px; text-align: center">
+           craigslist &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;help &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;safety &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;privacy&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;feedback &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;cl jobs &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;terms new &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;about &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;mobile  </h1>
+
+           </footer>
+            
+
+    </html>
